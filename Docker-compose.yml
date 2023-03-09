@@ -1,0 +1,10 @@
+version: '3'
+services:
+  lammps:
+    build:
+      context: .
+      dockerfile: ./lammps/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./volume:/volume
